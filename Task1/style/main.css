@@ -1,0 +1,253 @@
+/***** Global Styles *****/
+body {
+	color: #333;
+	font-size: 14px;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+}
+.container-fluid {
+	position: relative;
+}
+.bold {
+	font-weight: 700;
+}
+.btn {
+	padding: 5px 15px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 1px;
+}
+img {
+	width: 100%;
+}
+.btn:hover, .btn:focus {
+	color: #fff;
+}
+.row-custom {
+	margin: 0 -5px;
+}
+.col-padding-custom {
+	padding: 0 5px;
+}
+.product-block--yellow-bg {
+	position: relative;
+	-webkit-box-shadow: 5px 6px 11px -2px rgba(199,199,199,1);
+	-moz-box-shadow: 5px 6px 11px -2px rgba(199,199,199,1);
+	box-shadow: 5px 6px 11px -2px rgba(199,199,199,1);
+	background: #fef5ca !important;
+}
+.product-block--yellow-bg .product-block__footer {
+	background: #f5ecc3 !important;
+}
+/***** /Global Styles *****/
+
+/***** Header Styles *****/
+header, footer {
+	background: #333;
+	padding: 15px 0;
+}
+.logo a {
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+}
+.btn-post {
+	float: left;
+	background: #f82424;
+	border: 1px solid #ff2947;
+	color: #fff;
+	display: block;
+}
+.onoffswitch {
+	position: relative;
+	width: 25px;
+	margin: 11px 20px 0 50px;
+	float: left;
+}
+.onoffswitch::before, .onoffswitch::after {
+	content: '';
+	background: url(../img/sprite-main.png);
+	width: 15px;
+	height: 9px;
+	display: block;
+	position: absolute;
+	top: 1px;
+}
+.onoffswitch::before {
+	background-position: -15px 0;
+	right: 30px;
+}
+.onoffswitch::after {
+	background-position: 0 0;
+	left: 30px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border: 1px solid #454545;
+	border-radius: 50px;
+}
+.onoffswitch-inner {
+	display: block;
+	transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 10px;
+	padding: 0;
+	line-height: 10px;
+	box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+	content: "";
+	padding-left: 10px;
+	background-color: #2A2A2A;
+}
+.onoffswitch-inner:after {
+	content: "";
+	padding-right: 10px;
+	background-color: #2A2A2A;
+	text-align: right;
+}
+.onoffswitch-switch {
+	display: block;
+	width: 8px;
+	height: 8px;
+	margin: 1px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 1px;
+	bottom: 0;
+	right: 14px;
+	border-radius: 50%;
+	transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+	right: 1px;
+}
+.search-bar {
+	background: #dbdbdb;
+	padding: 15px 0;
+}
+.select {
+  margin: 0;
+}
+.select:focus, input:focus {
+	outline: none;
+}
+.select--city {
+	border: none;
+	background: none;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 11px 0;
+}
+input {
+	padding: 10px;
+}
+input, .select--rubric, .btn-src {
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #c7c7c7;
+}
+.select--rubric, .btn-src {
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 );
+}
+.select--rubric {
+	padding: 11px;
+}
+.btn-src {
+	padding: 9px 15px;
+}
+.btn-src:hover, .btn-src:focus {
+	color: #333;
+	outline: none;
+}
+/***** /Header Styles *****/
+
+/***** Content Styles *****/
+.content-wrap {
+	background: url(../img/background.png);
+}
+.left-block {
+	float: left;
+	margin-top: 30px;
+	width: calc(100% - 225px);
+}
+.grid {
+	margin-bottom: 60px;
+}
+.grid__item {
+	width: 215px;
+	margin-bottom: 10px;
+}
+.grid__item--width2 {
+	width: 440px;
+}
+.product-block {
+	border: 1px solid #c7c7c7;
+	display: block;
+	background: #fff;
+	color: #333;
+}
+.black-txt a {
+	color: #333;
+}
+.product-block--padding {
+	padding: 10px;
+}
+.product-block h4 {
+	font-size: 14px;
+	font-weight: 700;
+}
+.product-block p {
+	font-size: 12px;
+	margin: 0;
+}
+.product-block__footer {
+	background: #f7f7f7;
+}
+.product-block__footer a,
+.product-block__footer p {
+	color: #c0c0c0;
+}
+.right-block {
+	float: right;
+	margin-top: 30px;
+}
+.banner-block {
+	width: 215px;
+	margin-bottom: 10px;
+}
+.tabs-buttons {
+    cursor: pointer;
+    display: inline-block;
+}
+.tabs-buttons img {
+	width: 39px;
+}
+.tabs-item {
+    display: none;
+}
+
+.tabs-item.active {
+    display: block;
+}
+
+/***** /Content Styles *****/

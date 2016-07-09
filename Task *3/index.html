@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>GumHint plugin</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/gumhint.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+	<main>
+		<h1>Простой и эффективный плагин GumHint</h1>
+
+		<h4>Плагин для всплывающих подсказок обладает следующим функционалом:</h4>
+		<div class="rapid-hint" data-gumhint="Ку ку, я подсказка :)"><span class="main-hint">Стандартная подсказка</span></div>
+		<div class="slow-hint" data-gumhint="Благодарю за терпение"><span class="main-hint">Подсказка с задержкой</span></div>
+		<div class="animate-hint" data-gumhint="А я плавная подсказка"><span class="main-hint">Анимированная подсказка</span></div>
+	</main>
+
+
+	<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+	<script src="js/jquery.gumhint-1.0.0.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".rapid-hint").gumhint({
+				'delay': '0',
+				'animate': false
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".slow-hint").gumhint({
+				'delay': '1000',
+				'animate': false
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".animate-hint").gumhint({
+				'delay': '100',
+				'animate': true
+			});
+		});
+	</script>
+</body>
+</html>
