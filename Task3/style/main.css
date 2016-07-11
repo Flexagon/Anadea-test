@@ -251,6 +251,7 @@ header, footer {
 	position: relative;
 	z-index: 5;
 }
+
 .info-block {
 	min-width: 230px;
 	background: #f9fbd9;
