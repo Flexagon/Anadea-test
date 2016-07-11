@@ -1,0 +1,28 @@
+body {
+	font-family: "Arial", sans-serif;
+	background: #7ab4c7;
+	color: #fff;
+}
+main {
+	max-width: 1000px;
+	padding: 0 20px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 15%;
+}
+main h1 {
+	text-transform: uppercase;
+}
+main div {
+	display: inline-block;
+	padding: 10px;
+	background: #5bce1a;
+	opacity: .6;
+	transition: .2s;
+	border-radius: 5px;
+	margin: 20px auto;
+	cursor: pointer;
+}
+main div:hover {
+	opacity: 1;
+}

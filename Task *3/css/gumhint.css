@@ -1,0 +1,28 @@
+.gumhint {
+	display: block;
+	position: absolute;
+	max-width: 250px;
+	padding: 5px 10px;
+	font-family: sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #ffffff;
+	top: 0;
+	left: 0;
+	background: #333;
+	border-radius: 6px;
+	z-index: 999;
+}
+.gumhint:after {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	top: -4px;
+	left: 50%;
+	background: #333;
+	transform: rotate(45deg);
+}
+.main-hint {
+	position: relative;
+}
